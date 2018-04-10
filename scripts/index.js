@@ -1,7 +1,8 @@
     function gettName(){
       setTimeout(function(){
         let name = window.location.hash;
-        alert('You clicked on '+name);
+        const nme = document.querySelector('span.nme');
+        nme.innerHTML = 'You clicked on '+name;
       },100)
     }
 jQuery(function(){
